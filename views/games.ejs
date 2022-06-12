@@ -1,0 +1,148 @@
+<!-- Copyright of Sami Kalammallah 2021 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A trial games" />
+
+    <meta name="apple-mobile-web-app-title" content="Simple Javascript Games" />
+    <meta name="application-name" content="Simple Javascript Games" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/games.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <nav>
+        <div class="back_button">
+          <a href="/">
+            <h2><</h2>
+          </a>
+        </div>
+        <div class="title">
+          <div class="title_logo">
+            <img
+              loading="lazy"
+              width="80px"
+              height="80px"
+              src="/assets/images/logo.png"
+              alt=""
+            />
+          </div>
+          <div class="title_text">
+            <h1>ROCK PAPER SCRISSORS</h1>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <div class="container">
+      <main class="main">
+        <!-- Player section start -->
+        <div class="player">
+          <div class="user_title">
+            <h2><%= name %></h2>
+          </div>
+          <div class="user_choice">
+            <button class="choice batu">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/batu.png"
+                alt="batu"
+              />
+            </button>
+
+            <button class="choice kertas">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/kertas.png"
+                alt="kertas"
+              />
+            </button>
+
+            <button class="choice gunting">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/gunting.png"
+                alt="gunting"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- Player section end -->
+
+        <!-- Versus section start -->
+        <div id="vs_result" class="versus"></div>
+        <!-- Versus section end-->
+
+        <!-- Com section start -->
+        <div class="player">
+          <div class="user_title">
+            <h2>COM</h2>
+          </div>
+          <div class="user_choice">
+            <button class="choice batu">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/batu.png"
+                alt="batu"
+              />
+            </button>
+
+            <button class="choice kertas">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/kertas.png"
+                alt="kertas"
+              />
+            </button>
+            <!-- Copyright of Sami Kalammallah 2021 -->
+
+            <button class="choice gunting">
+              <img
+                loading="lazy"
+                width="128px"
+                height="128px"
+                src="/assets/images/gunting.png"
+                alt="gunting"
+              />
+            </button>
+          </div>
+        </div>
+        <!-- Com section end-->
+
+        <!-- Reset button start -->
+        <div class="reset">
+          <button id="reset" type="reset">
+            <img
+              loading="lazy"
+              width="68px"
+              height="68px"
+              src="/assets/images/refresh.png"
+              alt="reset button"
+            />
+          </button>
+        </div>
+        <!-- Reset button end -->
+      </main>
+    </div>
+  </body>
+  <script src="/scripts/script.js"></script>
+</html>
+<!-- Copyright of Sami Kalammallah 2021 -->
